@@ -11,14 +11,59 @@ body {
 }
 
 body {
-  
 }
 
 main {
-  
 }
 
 .top-bar {
-  
 }
 
+.diamond {
+}
+
+.diamond-one {
+}
+
+.diamond-two {
+}
+
+.line-one {
+}
+
+.line-two {
+}
+
+.circle {
+}
+
+.rectangle {
+}
+
+.label-rectangle {
+}
+
+//Medium layout (583px - 900px)
+.line-one {
+}
+
+.line-two {
+}
+
+.circle {
+}
+
+//Small layout (<583px)
+.line-one {
+}
+
+.line-two {
+}
+
+.circle {
+}
+.rectangle {
+}
+
+.label-rectangle {
+}
