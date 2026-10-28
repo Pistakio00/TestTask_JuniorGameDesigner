@@ -1,4 +1,4 @@
-// Base layout (>900px)
+/* Base layout (>900px) */
 * {
   box-sizing: border-box;
 }
@@ -11,21 +11,55 @@ body {
 }
 
 body {
+  display: grid;
+  background-color: green;
 }
 
 main {
+  border: 2px solid black;
 }
 
 .top-bar {
+  position: top;
+  width: 100%;
+  height: 40px;
+  background-color: olive;
+  border-bottom: 4px solid black;
+  
+}
+
+.shape {
+  border: 2px solid black;
 }
 
 .diamond {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  transform: rotate(45deg);
 }
 
 .diamond-one {
+  /*
+  position: absolute;
+  left: 60px;
+  top: 70px;
+  */
+
 }
 
 .diamond-two {
+  /*
+  position: absolute;
+  left: 15px;
+  top: 110px;
+  */
+}
+
+.line {
+  height: 5px;
+  width: 60px;
+  background-color: blue;
 }
 
 .line-one {
@@ -35,15 +69,22 @@ main {
 }
 
 .circle {
+  width: 30px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: lightblue;
 }
 
 .rectangle {
+  height: 200px;
+  width: 80px;
+  background-color: blue;
 }
 
 .label-rectangle {
 }
 
-//Medium layout (583px - 900px)
+/*Medium layout (583px - 900px)*/
 .line-one {
 }
 
@@ -53,7 +94,7 @@ main {
 .circle {
 }
 
-//Small layout (<583px)
+/*Small layout (<583px)*/
 .line-one {
 }
 
@@ -62,6 +103,7 @@ main {
 
 .circle {
 }
+
 .rectangle {
 }
 
