@@ -25,87 +25,116 @@ main {
   height: 40px;
   background-color: olive;
   border-bottom: 4px solid black;
-  
-}
-
-.shape {
-  border: 2px solid black;
 }
 
 .diamond {
   width: 40px;
   height: 40px;
   background-color: red;
+  border: 2px solid black;
   transform: rotate(45deg);
 }
 
 .diamond-one {
-  /*
   position: absolute;
   left: 60px;
-  top: 70px;
-  */
-
+  top: 60px;
 }
 
 .diamond-two {
-  /*
   position: absolute;
   left: 15px;
-  top: 110px;
-  */
+  top: 100px;
 }
 
 .line {
-  height: 5px;
+  position: fixed;
+  height: 6px;
   width: 60px;
   background-color: blue;
+  border: 2px solid black;
+  left: 30%;
 }
 
 .line-one {
+  top: 100px;
 }
 
 .line-two {
+  top: 120px;
 }
 
 .circle {
+  position: fixed;
   width: 30px;
   aspect-ratio: 1;
   border-radius: 100%;
   background-color: lightblue;
+  border: 2px solid black;
+  left: 38%;
+  top:100px;
 }
 
 .rectangle {
+  position: fixed;
   height: 200px;
   width: 80px;
-  background-color: blue;
-}
-
-.label-rectangle {
+  background-color: white;
+  border: 2px solid black;
+  top: 70px;
+  right: 20px;
+  text-align: center;
+  padding: 15px;
 }
 
 /*Medium layout (583px - 900px)*/
+@media (min-width: 583px) and (max-width: 900px) {
+
+.rectangle {
+  background-color: lightcoral;
+}
+
+.line{
+  left: 20px;
+}
+
 .line-one {
+  top: 160px;
 }
 
 .line-two {
+  top: 180px;
 }
 
 .circle {
+  
+  left: 100px;
+  top: 160px;
 }
-
+}
 /*Small layout (<583px)*/
+@media (max-width:582px){
+.line{
+  left: 20px;
+}
+
 .line-one {
+  top: 160px;
 }
 
 .line-two {
+  top: 180px;
 }
 
 .circle {
+  left: 100px;
+  top: 160px;
 }
 
 .rectangle {
+  position: relative;
+  background-color: blue;
+  left: 25px;
+  top: 160px;
 }
-
-.label-rectangle {
 }
